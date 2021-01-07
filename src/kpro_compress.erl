@@ -73,13 +73,15 @@ java_snappy_unpack_chunks(Chunks, Acc) ->
   end.
 
 snappy_decompress(BinData) ->
-  {ok, Decompressed} = snappyer:decompress(BinData),
-  Decompressed.
+  % {ok, Decompressed} = snappyer:decompress(BinData),
+  % Decompressed.
+  ok.
 
 snappy_compress(IoData) ->
-  {ok, Compressed} = snappyer:compress(IoData),
-  Compressed.
-
+  %{ok, Compressed} = snappyer:compress(IoData),
+  %Compressed.
+  ok.
+  
 %%%_* Emacs ====================================================================
 %%% Local Variables:
 %%% allout-layout: t
